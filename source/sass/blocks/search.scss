@@ -1,0 +1,23 @@
+.search {
+  padding: 38px 18px 49px;
+}
+
+.search__tagline {
+  display: block;
+  margin: 0 0 32px 0;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.search__text {
+  margin: 0 0 32px 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $text-color-2;
+  text-align: center;
+  text-transform: uppercase;
+}

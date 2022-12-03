@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -48,21 +49,21 @@
               <legend class="form__title">Представьтесь:</legend>
               <ul class="form__fields-list">
                 <li class="form__field-item field-text">
-                  <label class="field-text___label">
-                    <span class="field-text___label-name">ИМЯ*:</span>
-                    <input class="field-text___input" type="text" name="user-name" placeholder="Пётр" required>
+                  <label class="field-text__label">
+                    <span class="field-text__label-name">ИМЯ*:</span>
+                    <input class="field-text__input" type="text" name="user-name" placeholder="Пётр" required>
                   </label>
                 </li>
                 <li class="form__field-item field-text">
-                  <label class="field-text___label">
-                    <span class="field-text___label-name">ФАМИЛИЯ*:</span>
-                    <input class="field-text___input" type="text" name="user-surname" placeholder="Пустота" required>
+                  <label class="field-text__label">
+                    <span class="field-text__label-name">ФАМИЛИЯ*:</span>
+                    <input class="field-text__input" type="text" name="user-surname" placeholder="Пустота" required>
                   </label>
                 </li>
                 <li class="form__field-item field-text">
-                  <label class="field-text___label">
-                    <span class="field-text___label-name">Отчество:</span>
-                    <input class="field-text___input" type="text" name="user-patronymic" placeholder="Викторович" required>
+                  <label class="field-text__label">
+                    <span class="field-text__label-name">Отчество:</span>
+                    <input class="field-text__input" type="text" name="user-patronymic" placeholder="Викторович" required>
                   </label>
                 </li>
               </ul>
@@ -71,39 +72,39 @@
               <legend class="form__title">Контактная информация:</legend>
               <ul class="form__fields-list">
                 <li class="form__field-item field-phone">
-                  <label class="field-phone___label">
-                    <span class="field-phone___label-name">Контактный телефон*:</span>
+                  <label class="field-phone__label">
+                    <span class="field-phone__label-name">Контактный телефон*:</span>
                     <input class="field-phone__input" type="tel" name="user-phone" placeholder="Введите телефон" required>
                   </label>
                 </li>
                 <li class="form__field-item field-email">
-                  <label class="field-email___label">
-                    <span class="field-email___label-name">Контактный телефон*:</span>
-                    <input class="field-email__input" type="tel" name="user-phone" placeholder="Введите телефон" required>
+                  <label class="field-email__label">
+                    <span class="field-email__label-name">Электронная почта*:</span>
+                    <input class="field-email__input" type="email" name="user-email" placeholder="Введите e-mail" required>
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="form__group">
               <legend class="form__title">Ваше Общее впечатление:</legend>
-              <ul class="form__radio-list">
+              <ul class="form__radio-list form__fields-list">
                 <li class="form__radio-item radio">
                   <label class="radio__label">
-                    <input class="radio__input visually-hidden" type="radio" name="interview" value="positive" checked>
+                    <input class="radio__input" type="radio" name="interview" value="positive" checked>
                     <span class="radio__mark"></span>
                     <span class="radio__text">Скорее положительное</span>
                   </label>
                 </li>
                 <li class="form__radio-item radio">
                   <label class="radio__label">
-                    <input class="radio__input visually-hidden" type="radio" name="interview" value="negative">
+                    <input class="radio__input" type="radio" name="interview" value="negative">
                     <span class="radio__mark"></span>
                     <span class="radio__text">Скорее отрицательное</span>
                   </label>
                 </li>
                 <li class="form__radio-item radio">
                   <label class="radio__label">
-                    <input class="radio__input visually-hidden" type="radio" name="interview" value="difficult-to-answer">
+                    <input class="radio__input" type="radio" name="interview" value="difficult-to-answer">
                       <span class="radio__mark"></span>
                       <span class="radio__text">Затрудняюсь ответить</span>
                   </label>
@@ -112,31 +113,31 @@
             </fieldset>
             <fieldset class="form__group">
               <legend class="form__title">Посещенные достопримечательности:</legend>
-              <ul class="form__checkbox-list">
+              <ul class="form__checkbox-list form__fields-list">
                 <li class="form__checkbox-item checkbox">
                   <label class="checkbox__label">
-                    <input class="checkbox__input visually-hidden" type="checkbox" name="bridge" checked>
+                    <input class="checkbox__input" type="checkbox" name="bridge" checked>
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__text">Мост Дьявола</span>
                   </label>
                 </li>
                 <li class="form__checkbox-item checkbox">
                   <label class="checkbox__label">
-                    <input class="checkbox__input visually-hidden" type="checkbox" name="mount">
+                    <input class="checkbox__input" type="checkbox" name="mount">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__text">Гора-Колокол</span>
                   </label>
                 </li>
                 <li class="form__checkbox-item checkbox">
                   <label class="checkbox__label">
-                    <input class="checkbox__input visually-hidden" type="checkbox" name="park">
+                    <input class="checkbox__input" type="checkbox" name="park">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__text">Слайд-парк</span>
                   </label>
                 </li>
                 <li class="form__checkbox-item checkbox">
                   <label class="checkbox__label">
-                    <input class="control-input visually-hidden" type="checkbox" name="rocks">
+                    <input class="control-input" type="checkbox" name="rocks">
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__text">Красные скалы</span>
                   </label>
@@ -163,7 +164,7 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__contacts contacts">
-          <a class="contacts__link" href="#">#visitSEDONA</a>
+          <a class="main-footer__link" href="#">#visitSEDONA</a>
         </div>
         <section class="main-footer__social social">
           <h2 class="visually-hidden">Наша компания в соцсетях.</h2>
@@ -201,8 +202,8 @@
         <button class="modal___button button">OK</button>
       </div>
     </div>
-    <div class="page__modal-container-feedback feedback">
-      <div class="feedback__modal modal">
+    <div class="page__modal-container-feedback feedback-modal">
+      <div class="feedback-modal__wrapper modal">
         <h2 class="modal__title">Ваш отзыв отправлен!</h2>
         <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
         <div class="modal__button-wrapper">
