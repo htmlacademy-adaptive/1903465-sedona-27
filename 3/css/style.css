@@ -14,13 +14,14 @@
   font-display: swap;
 }
 .page {
-  height: 100%;
+  min-height: 100%;
   background-color: #f2f2f2;
   box-sizing: border-box;
 }
 
 .page__body {
   width: 320px;
+  min-height: 100%;
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
@@ -68,7 +69,7 @@
   text-decoration: none;
 }
 
-.promo {
+.main-image {
   padding: 90px 0 85px 0;
   background-color: #aabfd2;
   background-image: url("../img/background-index-mobile.jpg");
@@ -107,6 +108,19 @@
 .advantages__content {
   padding: 42px 33px 41px;
   background-color: #81b3d2;
+  color: #ffffff;
+}
+.advantages__content--icon {
+  margin-bottom: 25px;
+  padding: 0;
+  background-color: #ffffff;
+  color: #000000;
+}
+.advantages__content--number {
+  margin: 0;
+  padding: 24px 0 24px;
+  background-color: #eeeeee;
+  color: #000000;
 }
 
 .advantages__subject {
@@ -117,7 +131,6 @@
   text-align: center;
   text-transform: uppercase;
 }
-
 .advantages__subject::after {
   content: "— №" counter(counter) " —";
   counter-increment: counter;
@@ -136,10 +149,9 @@
 
 .advantages__sub-list {
   margin: 0;
-  padding: 0;
+  padding: 23px 0 21px;
   list-style-type: none;
 }
-
 .advantages__sub-list .advantages__subject::after {
   content: none;
 }
@@ -198,20 +210,37 @@
   text-transform: uppercase;
 }
 
-.catalog {
+.photo-video {
   padding-top: 38px;
 }
 
-.catalog__title {
+.photo-video__title {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.photo-video__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.photo-video__slogan {
   margin: 0 0 32px 0;
-  font-size: 18px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
 }
 
-.catalog__tagline {
+.photo-video__intro {
   margin: 0;
   font-size: 14px;
   line-height: 21px;
@@ -221,39 +250,16 @@
   text-transform: uppercase;
 }
 
-.catalog__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.card__title {
-  margin: 0 0 10px 0;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.card__text {
-  margin: 0;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  text-align: center;
-}
-
-.video__slogan {
+.intro__title {
   margin: 0 0 32px 0;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
 }
 
-.video__intro {
+.intro__description {
   margin: 0;
   font-size: 14px;
   line-height: 21px;
