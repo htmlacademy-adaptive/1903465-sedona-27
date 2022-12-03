@@ -1,8 +1,4 @@
-.catalog {
-  padding-top: 38px;
-}
-
-.catalog__title {
+.intro__title {
   margin: 0 0 32px 0;
   font-size: 18px;
   line-height: 26px;
@@ -11,7 +7,7 @@
   text-transform: uppercase;
 }
 
-.catalog__tagline {
+.intro__description {
   margin: 0;
   font-size: 14px;
   line-height: 21px;
@@ -19,10 +15,4 @@
   color: $text-color-2;
   text-align: center;
   text-transform: uppercase;
-}
-
-.catalog__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }

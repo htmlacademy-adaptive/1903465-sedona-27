@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -12,7 +12,7 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
@@ -34,10 +34,9 @@
     </header>
     <main class="main-form">
       <h1 class="visually-hidden">Отзывы о путешествии в Седону.</h1>
-      <section class="promo">
-        <h2 class="visually-hidden">Приветствие.</h2>
+      <div class="main-image">
         <img src="img/form-promo-mobile.svg" width="229" height="39" alt="Сайт городка Седона.">
-      </section>
+      </div>
       <section class="feedback">
         <div class="feedback__wrapper">
           <header class="feedback__header">
@@ -51,19 +50,19 @@
                 <li class="form__field-item field-text">
                   <label class="field-text__label">
                     <span class="field-text__label-name">ИМЯ*:</span>
-                    <input class="field-text__input" type="text" name="user-name" placeholder="Пётр" required>
+                    <input class="field-text__input" type="text" name="user-name" placeholder="Пётр" value="Пётр" required>
                   </label>
                 </li>
                 <li class="form__field-item field-text">
                   <label class="field-text__label">
                     <span class="field-text__label-name">ФАМИЛИЯ*:</span>
-                    <input class="field-text__input" type="text" name="user-surname" placeholder="Пустота" required>
+                    <input class="field-text__input" type="text" name="user-surname" placeholder="Пустота" value="Пустота" required>
                   </label>
                 </li>
                 <li class="form__field-item field-text">
                   <label class="field-text__label">
                     <span class="field-text__label-name">Отчество:</span>
-                    <input class="field-text__input" type="text" name="user-patronymic" placeholder="Викторович" required>
+                    <input class="field-text__input" type="text" name="user-patronymic" placeholder="Викторович" value="Викторович" required>
                   </label>
                 </li>
               </ul>
@@ -91,22 +90,19 @@
                 <li class="form__radio-item radio">
                   <label class="radio__label">
                     <input class="radio__input" type="radio" name="interview" value="positive" checked>
-                    <span class="radio__mark"></span>
                     <span class="radio__text">Скорее положительное</span>
                   </label>
                 </li>
                 <li class="form__radio-item radio">
                   <label class="radio__label">
                     <input class="radio__input" type="radio" name="interview" value="negative">
-                    <span class="radio__mark"></span>
                     <span class="radio__text">Скорее отрицательное</span>
                   </label>
                 </li>
                 <li class="form__radio-item radio">
                   <label class="radio__label">
-                    <input class="radio__input" type="radio" name="interview" value="difficult-to-answer">
-                      <span class="radio__mark"></span>
-                      <span class="radio__text">Затрудняюсь ответить</span>
+                    <input class="radio__input" type="radio" name="interview" value="difficult">
+                    <span class="radio__text">Затрудняюсь ответить</span>
                   </label>
                 </li>
               </ul>
@@ -117,28 +113,24 @@
                 <li class="form__checkbox-item checkbox">
                   <label class="checkbox__label">
                     <input class="checkbox__input" type="checkbox" name="bridge" checked>
-                    <span class="checkbox__mark"></span>
                     <span class="checkbox__text">Мост Дьявола</span>
                   </label>
                 </li>
                 <li class="form__checkbox-item checkbox">
                   <label class="checkbox__label">
                     <input class="checkbox__input" type="checkbox" name="mount">
-                    <span class="checkbox__mark"></span>
                     <span class="checkbox__text">Гора-Колокол</span>
                   </label>
                 </li>
                 <li class="form__checkbox-item checkbox">
                   <label class="checkbox__label">
                     <input class="checkbox__input" type="checkbox" name="park">
-                    <span class="checkbox__mark"></span>
                     <span class="checkbox__text">Слайд-парк</span>
                   </label>
                 </li>
                 <li class="form__checkbox-item checkbox">
                   <label class="checkbox__label">
-                    <input class="control-input" type="checkbox" name="rocks">
-                    <span class="checkbox__mark"></span>
+                    <input class="checkbox-input" type="checkbox" name="rocks">
                     <span class="checkbox__text">Красные скалы</span>
                   </label>
                 </li>
