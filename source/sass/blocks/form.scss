@@ -1,12 +1,10 @@
 .form__group {
-  margin: 0;
-  padding: 0;
-  border: none;
+  @include fieldset-reset;
 }
 
 .form__title {
-  margin: 0 0 20px 0;
-  padding: 0;
+  @include legend-reset;
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -15,7 +13,5 @@
 }
 
 .form__fields-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  @include list-reset;
 }

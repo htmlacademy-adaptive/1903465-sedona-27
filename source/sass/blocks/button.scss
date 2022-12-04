@@ -1,4 +1,5 @@
 .button {
+  @include input-reset;
   display: block;
   padding: 16px 20px;
   font-size: 21px;

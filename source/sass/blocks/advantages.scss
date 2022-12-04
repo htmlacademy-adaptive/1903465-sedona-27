@@ -71,9 +71,8 @@
 }
 
 .advantages__sub-list {
-  margin: 0;
+  @include list-reset;
   padding: 23px 0 21px;
-  list-style-type: none;
 
   .advantages__subject {
     &::after {

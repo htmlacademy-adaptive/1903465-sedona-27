@@ -14,7 +14,7 @@
 }
 
 .field-phone__input {
-  padding: 0;
+  @include input-reset;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
