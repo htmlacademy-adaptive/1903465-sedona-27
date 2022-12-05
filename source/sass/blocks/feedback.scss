@@ -1,0 +1,22 @@
+.feedback__header {
+  padding: 38px 0 28px;
+}
+
+.feedback__title {
+  margin: 0 0 24px 0;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.feedback__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $text-color-2;
+  text-align: center;
+  text-transform: uppercase;
+}
