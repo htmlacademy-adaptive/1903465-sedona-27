@@ -5,15 +5,16 @@
 }
 
 .page__body {
-  width: 320px;
+  min-width: 320px;
   min-height: 100%;
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: $end-color;
   background-color: $start-color;
+  text-transform: uppercase;
 }
 
 .page__modal-container-mistake {

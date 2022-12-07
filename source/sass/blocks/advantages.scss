@@ -8,13 +8,11 @@
   line-height: 26px;
   font-weight: 700;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .advantages__text {
   margin: 0;
   text-align: center;
-  text-transform: uppercase;
   color: $text-color-2;
 }
 
@@ -51,7 +49,6 @@
   line-height: 26px;
   font-weight: 700;
   text-align: center;
-  text-transform: uppercase;
 
   &::after {
     content: "— №" counter(counter) " —";
@@ -67,7 +64,6 @@
 .advantages__description {
   margin: 0;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .advantages__sub-list {
