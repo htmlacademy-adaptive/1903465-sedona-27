@@ -1,9 +1,27 @@
+.main-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 758px;
+    min-height: 120px;
+    margin: 0 auto;
+    padding: 36px 45px;
+  }
+}
+
+.main-footer__social {
+  width: 156px;
+
+  @media (min-width: $tablet-width) {
+    // max-width: 258px;
+  }
+}
+
 .main-footer__link {
   display: block;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: $end-color;
-  text-decoration: none;
   text-align: center;
 }

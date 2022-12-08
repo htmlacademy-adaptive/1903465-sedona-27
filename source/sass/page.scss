@@ -1,20 +1,42 @@
 .page {
   min-height: 100%;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
   background-color: $background-color;
   box-sizing: border-box;
+}
+
+.page img {
+  height: auto;
+}
+
+.page a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .page__body {
   min-width: 320px;
   min-height: 100%;
   margin: 0;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
   color: $end-color;
   background-color: $start-color;
   text-transform: uppercase;
+}
+
+.page__body-wrapper {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .page__modal-container-mistake {

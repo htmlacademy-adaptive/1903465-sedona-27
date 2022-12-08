@@ -1,1 +1,12 @@
 //social
+.social__list {
+  // @include list-reset;
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  gap: 6px;
+  width: 156px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 258px;
+  }
+}

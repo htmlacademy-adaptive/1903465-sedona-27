@@ -1,11 +1,25 @@
 .main-image {
+  display: block;
   width: 320px;
   min-height: 387px;
+  margin: 0 auto;
   background-color: #aabfd2;
   background-image: url("../img/bg-index-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 518px;
+    background-image: url("../../img/bg-index-tablet.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 518px;
+    background-image: url("../../img/bg-index-desktop.jpg");
+  }
 }
 
 .main-image--form-photo {

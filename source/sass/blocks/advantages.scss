@@ -1,8 +1,21 @@
 .advantages__text-block {
+  width: 320px;
+  margin: 0 auto;
   padding: 32px 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    padding: 47px 20px 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 550px;
+    padding: 59px 20px 44px;
+  }
 }
 
 .advantages__tagline {
+  display: block;
   margin: 0 0 35px 0;
   font-size: 18px;
   line-height: 26px;
@@ -21,9 +34,32 @@
   padding: 0;
   list-style-type: none;
   counter-reset: counter;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
+
+.advantages__picture-block {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .advantages__content {
+  width: 320px;
   padding: 42px 33px 41px;
   background-color: $background-color-3;
   color: $start-color;
@@ -33,6 +69,17 @@
     padding: 0;
     background-color: $start-color;
     color: $end-color;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      padding: 60px 33px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 400px;
+      height: 330px;
+      padding: 69px 50px 67px;
+    }
   }
 
   &--number {
@@ -40,6 +87,19 @@
     padding: 24px 0 24px;
     background-color: $background-color-4;
     color: $end-color;
+
+    @media (min-width: $tablet-width) {
+      padding: 52px 33px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    height: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
   }
 }
 
@@ -66,6 +126,13 @@
   text-align: center;
 }
 
+.advantages__images-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 512px;
+    height: 256px;
+  }
+}
+
 .advantages__sub-list {
   @include list-reset;
   padding: 23px 0 21px;
@@ -74,5 +141,11 @@
     &::after {
       content: none;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
   }
 }
