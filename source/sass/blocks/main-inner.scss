@@ -1,4 +1,20 @@
 //main-inner
+.main-inner__intro {
+  padding: 37px 20px 25px;
+  border-bottom: 1px solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    width: 480px;
+    margin: 0 auto;
+    padding: 66px 20px 67px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 20px 65px;
+  }
+}
+
 .main-inner__title {
   margin: 0 0 32px 0;
   font-size: 18px;
