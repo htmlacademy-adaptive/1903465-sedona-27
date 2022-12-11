@@ -1,5 +1,18 @@
-.form__group {
+.form__column-wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form__fieldset {
   @include fieldset-reset;
+  padding-top: 24px;
+  border-top: 1px solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+  }
 }
 
 .form__title {
@@ -9,8 +22,100 @@
   line-height: 26px;
   font-weight: 700;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    // width: 640px;
+    margin-bottom: 28px;
+    // padding: 0 120px 5px;
+    font-size: 21px;
+  }
 }
 
-.form__fields-list {
+.form__list {
   @include list-reset;
+  margin-bottom: 23px;
+  padding: 0 20px;
+  text-transform: none;
+}
+
+.form__label {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $text-color-2;
+  text-transform: uppercase;
+}
+
+.form__textarea-item {
+  margin: 0 auto 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+  }
+}
+
+.form__button-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 24px 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 768px;
+  }
+}
+
+.form__button {
+  min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 384px;
+  }
+}
+
+.form__field {
+  margin: 0;
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $text-color-4;
+  text-align: right;
+}
+
+.form__radio-list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 960px;
+  }
+}
+
+.form__checkbox-list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 960px;
+  }
 }

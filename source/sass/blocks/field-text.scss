@@ -4,12 +4,8 @@
 }
 
 .field-text__label-name {
+  display: block;
   margin: 0;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: $text-color-2;
-  text-align: center;
 }
 
 .field-text__input {

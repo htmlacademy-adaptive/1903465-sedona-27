@@ -1,7 +1,33 @@
-.textarea__label,
-.textarea__text {
+.textarea__label {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: $end-color;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.textarea__text {
+  display: block;
+  min-width: 280px;
+  min-height: 150px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $text-color-5;
+  background-color: $background-color;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    min-height: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 768px;
+  }
 }

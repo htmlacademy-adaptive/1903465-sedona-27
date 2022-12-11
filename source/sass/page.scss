@@ -5,6 +5,7 @@
   line-height: 21px;
   font-weight: 400;
   background-color: $background-color;
+  color: $end-color;
   box-sizing: border-box;
 }
 
@@ -21,14 +22,13 @@
   min-width: 320px;
   min-height: 100%;
   margin: 0;
-  color: $end-color;
-  background-color: $start-color;
   text-transform: uppercase;
 }
 
 .page__body-wrapper {
   width: 320px;
   margin: 0 auto;
+  background-color: $start-color;
 
   @media (min-width: $tablet-width) {
     width: 768px;
