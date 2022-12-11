@@ -4,7 +4,7 @@
   min-height: 387px;
   margin: 0 auto;
   background-color: #aabfd2;
-  background-image: url("../img/bg-index-mobile.jpg");
+  background-image: url("../img/background-index-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
   text-align: center;
@@ -12,13 +12,13 @@
   @media (min-width: $tablet-width) {
     width: 768px;
     height: 518px;
-    background-image: url("../../img/bg-index-tablet.jpg");
+    background-image: url("../../img/background-index-tablet.jpg");
   }
 
   @media (min-width: $desktop-width) {
     width: 1200px;
     height: 518px;
-    background-image: url("../../img/bg-index-desktop.jpg");
+    background-image: url("../../img/background-index-desktop.jpg");
   }
 }
 
@@ -29,12 +29,12 @@
   @media (min-width: $tablet-width) {
     width: 768px;
     height: 290px;
-    background-image: url("../../img/bg-index-tablet.jpg");
+    background-image: url("../../img/background-index-tablet.jpg");
   }
 
   @media (min-width: $desktop-width) {
     width: 1200px;
     height: 301px;
-    background-image: url("../../img/bg-index-desktop.jpg");
+    background-image: url("../../img/background-index-desktop.jpg");
   }
 }
