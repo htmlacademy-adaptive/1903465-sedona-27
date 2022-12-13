@@ -1,13 +1,28 @@
 //main-header
-// .main-header__wrapper {
-//   width: 320px;
-//   margin: 0 auto;
-//   padding: 0 20px;
-//   background-color: $start-color;
-// }
+
+.main-header {
+  position: relative;
+  min-height: 56px;
+}
 
 .main-header__logo {
-  display: block;
+  position: absolute;
+  top: 0;
+  left: 68px;
+  width: 185px;
+  height: 96px;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    left: 291px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 507px;
+  }
+}
+
+.main-header__logo-image {
   width: 185px;
   height: 96px;
 }

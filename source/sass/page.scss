@@ -19,10 +19,19 @@
 }
 
 .page__body {
+  max-width: 1280px;
   min-width: 320px;
   min-height: 100%;
-  margin: 0;
+  margin: 0 auto;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+  }
 }
 
 .page__body-wrapper {
