@@ -12,3 +12,14 @@
     max-width: 1200px;
   }
 }
+
+.wrapper--catalog {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800;
+  }
+}

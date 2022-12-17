@@ -10,6 +10,7 @@
 }
 
 .page img {
+  display: block;
   height: auto;
 }
 
@@ -35,16 +36,16 @@
 }
 
 .page__body-wrapper {
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto;
   background-color: $start-color;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    max-width: 768px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 

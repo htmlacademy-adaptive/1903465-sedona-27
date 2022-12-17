@@ -17,6 +17,16 @@
   overflow: hidden;
 }
 
-// .breaker {
+.breaker {
+  // display: block;
 
-// }
+  &--mobile {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+}

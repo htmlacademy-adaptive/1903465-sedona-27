@@ -7,12 +7,71 @@
 
 .form__fieldset {
   @include fieldset-reset;
-  padding-top: 24px;
+  padding: 24px 20px 0;
   border-top: 1px solid $border-color;
 
   @media (min-width: $tablet-width) {
     border-top: none;
   }
+
+  &--radio {
+    margin-bottom: 23px;
+  }
+}
+
+.form__fieldset--decoration {
+  position: relative;
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      content: "";
+      top: 37px;
+      width: 100%;
+      height: 1px;
+      background-color: $background-color-6;
+      // z-index: -1;
+    }
+  }
+}
+
+.form__list {
+  @include list-reset;
+  margin-bottom: 23px;
+  padding: 0 20px;
+  text-transform: none;
+
+  &--radio {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      width: 648px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 960px;
+    }
+  }
+
+  &--checkbox {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      width: 648px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      width: 960px;
+    }
+  }
+}
+
+.form__item {
+  margin: 0;
 }
 
 .form__title {
@@ -24,27 +83,113 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    // width: 640px;
     margin-bottom: 28px;
-    // padding: 0 120px 5px;
     font-size: 21px;
   }
 }
 
-.form__list {
-  @include list-reset;
-  margin-bottom: 23px;
-  padding: 0 20px;
+.form__toggle {
+  display: none;
+}
+
+.form__toggle-text {
+  position: relative;
+  display: block;
+  padding: 10px 13px 10px 62px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $end-color;
   text-transform: none;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -2px;
+    left: 0;
+    display: block;
+    width: 46px;
+    height: 46px;
+    background-color: $background-color;
+    border: 2px solid $background-color;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    opacity: 0;
+    transition-duration: 0.3s;
+    transition-property: opacity;
+  }
+
+  &--radio::before {
+    border-radius: 50%;
+  }
+
+  &--radio::after {
+    top: 12px;
+    left: 15px;
+    width: 16px;
+    height: 16px;
+    background-color: $text-color-2;
+    border-radius: 50%;
+  }
+
+  &--checkbox::after {
+    position: absolute;
+    content: url("../../img/icons/tick.svg");
+    top: 9px;
+    left: 12px;
+    width: 22px;
+    height: 16px;
+  }
+}
+
+.form__toggle:checked + .form__toggle-text::after {
+  opacity: 1;
 }
 
 .form__label {
-  margin: 0;
+  display: block;
+  margin: 0 0 16px 0;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: $text-color-2;
   text-transform: uppercase;
+}
+
+.form__label-name {
+  display: block;
+  margin: 0;
+  padding-left: 16px;
+}
+
+.form__input {
+  @include input-reset;
+  width: 100%;
+  padding: 16px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: $background-color;
+  color: $end-color;
+
+  &--phone {
+    padding-right: 58px;
+    background-image: url("../../img/icons/phone.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) center;
+  }
+
+  &--email {
+    padding-right: 58px;
+    background-image: url("../../img/icons/mail.svg");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 23px) center;
+  }
 }
 
 .form__textarea-item {
@@ -90,32 +235,4 @@
   font-weight: 400;
   color: $text-color-4;
   text-align: right;
-}
-
-.form__radio-list {
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    width: 648px;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 960px;
-  }
-}
-
-.form__checkbox-list {
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    width: 648px;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 960px;
-  }
 }

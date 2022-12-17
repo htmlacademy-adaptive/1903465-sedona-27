@@ -17,7 +17,7 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
-  z-index: 3;
+  z-index: 4;
 
   &:hover {
     opacity: 0.8;
@@ -93,7 +93,7 @@
   width: 320px;
   min-height: 223px;
   background-color: $background-color-3;
-  z-index: 2;
+  z-index: 3;
 }
 
 .main-nav--nojs .main-nav__toggle {
