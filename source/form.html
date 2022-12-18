@@ -29,11 +29,11 @@
                 <li class="main-nav__item">
                   <a class="main-nav__link" href="catalog.html">Фото и видео</a>
                 </li>
-                <li class="main-nav__item main-nav__item--current">
-                  <a class="main-nav__link">Форма Отзыва</a>
+                <li class="main-nav__item">
+                  <a class="main-nav__link main-nav__link--current">Форма Отзыва</a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__link" target="_blank" href="#">HTML ACADEMY</a>
+                  <a class="main-nav__link" target="_blank" href="https://htmlacademy.ru/">HTML ACADEMY</a>
                 </li>
               </ul>
             </div>
@@ -95,7 +95,9 @@
                 </fieldset>
               </div>
               <fieldset class="form__fieldset form__fieldset--radio form__fieldset--decoration">
-                <legend class="form__title">Ваше Общее впечатление:</legend>
+                <legend class="form__title">
+                  <span class="form__title-accent">Ваше Общее впечатление:</span>
+                </legend>
                 <div class="form__list form__list--radio">
                   <p class="form__item">
                     <label class="form__label">
@@ -118,7 +120,9 @@
                 </div>
               </fieldset>
               <fieldset class="form__fieldset form__fieldset--decoration">
-                <legend class="form__title">Посещенные<br>достопримечательности:</legend>
+                <legend class="form__title">
+                  <span class="form__title-accent">Посещенные<br>достопримечательности:</span>
+                </legend>
                 <div class="form__list form__list--checkbox">
                   <p class="form__item">
                     <label class="form__label">
@@ -147,7 +151,9 @@
                 </div>
               </fieldset>
               <fieldset class="form__fieldset form__fieldset--decoration">
-                <legend class="form__title">Опишите свои эмоции:</legend>
+                <legend class="form__title">
+                  <span class="form__title-accent">Опишите свои эмоции:</span>
+                </legend>
                 <div class="form__textarea-item textarea">
                   <label class="textarea__label">
                     <span class="visually-hidden">Рассказ о впечатлениях.</span>
@@ -187,11 +193,12 @@
             </ul>
           </section>
           <div class="main-footer__copyright copyright">
-            <p class="copyright__info">Разработано
-              <a class="copyright__logo" target="_blank" href="https://htmlacademy.ru/intensive/adaptive">
-                <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип htmlacademy.">
-              </a>
-            </p>
+            <a class="copyright__link" target="_blank" href="https://htmlacademy.ru/intensive/adaptive">
+              Разработано
+              <svg class="copyright__icon" aria-hidden="true" focusable="false" width="36" height="36" viewBox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.1506 2.25H18.0502L4.5 3.58944V27.221L18.0502 34.875L31.5 27.221V3.58944L18.1506 2.25ZM29.5929 13.8266L18.0502 7.32075V7.22507H17.9498L17.8494 7.1294V7.22507L6.40706 13.8266V5.21591L17.9498 4.06782L29.5929 5.21591V13.8266ZM17.9498 8.75587L29.4926 15.1661L24.9758 17.6536L17.8494 13.6353V14.9747L23.7714 18.3233L22.868 18.8017L17.8494 15.9315V17.2709L21.6636 19.4714L20.8606 19.9498L17.8494 18.2276V19.5671L19.7565 20.6195L17.9498 21.6719L6.50743 15.2617L17.9498 8.75587ZM6.40706 16.6968L17.8494 23.2027V24.1595L9.92007 19.6628V21.0022L17.9498 25.5946V26.647L9.92007 22.1503V23.4897L17.9498 28.0821L26.0799 23.3941V18.419L29.4926 16.5055V26.0729L17.9498 32.6745L6.40706 26.1686V16.6968Z"/>
+              </svg>
+            </a>
           </div>
         </div>
       </footer>
