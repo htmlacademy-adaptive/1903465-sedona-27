@@ -13,13 +13,13 @@
   @media (min-width: $tablet-width) {
     // width: 768px;
     height: 518px;
-    background-image: url("../../img/background-index-tablet.jpg");
+    background-image: url("../img/background-index-tablet.jpg");
   }
 
   @media (min-width: $desktop-width) {
     // width: 1200px;
     height: 518px;
-    background-image: url("../../img/background-index-desktop.jpg");
+    background-image: url("../img/background-index-desktop.jpg");
   }
 }
 
@@ -46,13 +46,13 @@
     // width: 768px;
     height: 290px;
     padding: 95px 0 117px;
-    background-image: url("../../img/background-index-tablet.jpg");
+    background-image: url("../img/background-index-tablet.jpg");
   }
 
   @media (min-width: $desktop-width) {
     // width: 1200px;
     height: 301px;
     padding: 101px 0 120px;
-    background-image: url("../../img/background-index-desktop.jpg");
+    background-image: url("../img/background-index-desktop.jpg");
   }
 }
