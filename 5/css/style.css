@@ -485,7 +485,7 @@ body {
 .advantages__content--hotel::before {
   width: 40px;
   height: 40px;
-  background-image: url("../../img/icons/advantages-hotel-mobile.svg");
+  background-image: url("../img/icons/advantages-hotel-mobile.svg");
 }
 @media (min-width: 768px) {
   .advantages__content--hotel::before {
@@ -501,7 +501,7 @@ body {
 .advantages__content--food::before {
   width: 40px;
   height: 40px;
-  background-image: url("../../img/icons/advantages-burger-mobile.svg");
+  background-image: url("../img/icons/advantages-burger-mobile.svg");
 }
 @media (min-width: 768px) {
   .advantages__content--food::before {
@@ -518,7 +518,7 @@ body {
 .advantages__content--gift::before {
   width: 40px;
   height: 40px;
-  background-image: url("../../img/icons/advantages-gift-mobile.svg");
+  background-image: url("../img/icons/advantages-gift-mobile.svg");
 }
 @media (min-width: 768px) {
   .advantages__content--gift::before {
@@ -714,7 +714,7 @@ body {
   left: 57%;
   width: 27px;
   height: 27px;
-  background-image: url("../../img/icons/map-marker.svg");
+  background-image: url("../img/icons/map-marker.svg");
 }
 @media (min-width: 768px) {
   .contacts__map--image {
@@ -828,13 +828,13 @@ body {
   background-position: 50% 50%;
 }
 .social__link--vkontakte {
-  background-image: url("../../img/icons/social-vk.svg");
+  background-image: url("../img/icons/social-vk.svg");
 }
 .social__link--telegram {
-  background-image: url("../../img/icons/social-telegram.svg");
+  background-image: url("../img/icons/social-telegram.svg");
 }
 .social__link--youtube {
-  background-image: url("../../img/icons/social-youtube.svg");
+  background-image: url("../img/icons/social-youtube.svg");
 }
 
 .copyright__info {
@@ -973,7 +973,7 @@ body {
   height: 21px;
   margin-right: 14px;
   background-color: #ffffff;
-  background-image: url("../../img/icons/icon-like.svg");
+  background-image: url("../img/icons/icon-like.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1058,7 +1058,7 @@ body {
   transform: translate(-50%, -50%);
   width: 48px;
   height: 54px;
-  background-image: url("../../img/icons/video-marker.svg");
+  background-image: url("../img/icons/video-marker.svg");
 }
 
 .feedback__wrapper {
