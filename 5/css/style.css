@@ -343,13 +343,13 @@ body {
 @media (min-width: 768px) {
   .main-image {
     height: 518px;
-    background-image: url("../../img/background-index-tablet.jpg");
+    background-image: url("../img/background-index-tablet.jpg");
   }
 }
 @media (min-width: 1200px) {
   .main-image {
     height: 518px;
-    background-image: url("../../img/background-index-desktop.jpg");
+    background-image: url("../img/background-index-desktop.jpg");
   }
 }
 
@@ -378,14 +378,14 @@ body {
   .main-image--form-photo {
     height: 290px;
     padding: 95px 0 117px;
-    background-image: url("../../img/background-index-tablet.jpg");
+    background-image: url("../img/background-index-tablet.jpg");
   }
 }
 @media (min-width: 1200px) {
   .main-image--form-photo {
     height: 301px;
     padding: 101px 0 120px;
-    background-image: url("../../img/background-index-desktop.jpg");
+    background-image: url("../img/background-index-desktop.jpg");
   }
 }
 
