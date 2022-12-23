@@ -1,20 +1,16 @@
 .main-footer {
+  width: 100%;
   margin-top: auto;
 }
 
 .main-footer__wrapper {
-  width: 320px;
+  width: 280px;
   min-height: 233px;
   margin: 0 auto;
-  padding: 29px 20px;
+  padding: 29px 0;
   background-color: $start-color;
 
   @media (min-width: $tablet-width) {
-    // display: grid;
-    // grid-template-columns: 166px 156px 128px;
-    // column-gap: 100px;
-    // row-gap: 10px;
-    // width: 768px;
     display: flex;
     justify-content: space-between;
     width: 648px;
@@ -24,10 +20,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    // width: 1200px;
     width: 960px;
-    // padding: 36px 136px 36px 104px;
-    // column-gap: 255px;
   }
 }
 
@@ -51,7 +44,6 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    // margin-bottom: 0;
     margin: 0;
     padding: 10px;
   }
@@ -62,7 +54,6 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    // margin-left: auto;
     margin: 0;
   }
 }

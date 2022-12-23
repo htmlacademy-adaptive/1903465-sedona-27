@@ -12,10 +12,11 @@
 
 .textarea__text {
   display: block;
-  min-width: 280px;
+  min-width: 240px;
   min-height: 150px;
   margin: 0 auto;
   padding: 16px;
+  font-family: inherit;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
