@@ -2,12 +2,10 @@
   max-width: 320px;
   width: 280px;
   margin: 0 auto;
-  // padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
     width: 458px;
-    // padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,6 +20,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 800px;
+    max-width: 1200px;
   }
 }
