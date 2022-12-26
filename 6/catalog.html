@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/1903465-sedona-27/6/">
+</head>
+  <body class="page__body">
+    <div class="page__body-wrapper">
+      <header class="main-header">
+        <a class="main-header__logo" href="index.html">
+          <img class="main-header__logo-image" src="img/logo-sedona-mobile.svg" width="185" height="96" alt="Логотип городка Седона.">
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--current">Фото и видео</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Форма Отзыва</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" target="_blank" href="https://htmlacademy.ru/">HTML ACADEMY</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main class="main main-inner">
+        <div class="main-image main-image--form-photo">
+          <img class="main-image__slogan" src="img/form-promo-mobile.svg" width="229" height="39" alt="Сайт городка Седона.">
+        </div>
+        <div class="wrapper wrapper--catalog">
+          <div class="main-inner__intro">
+            <h1 class="main-inner__title">Фото и видео</h1>
+          <p class="main-inner__description">Не можете решиться на путешествие из-за&nbsp;курса? Фотографии&nbsp;помогут вам забыть о политике и экономике.</p>
+          </div>
+        </div>
+        <section class="photo">
+          <div class="photo__wrapper">
+            <h2 class="visually-hidden">Фото</h2>
+            <div class="photo__block">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/card/photo-1-desktop.jpg 1x, img/card/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/card/photo-1-tablet.jpg 1x, img/card/photo-1-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/card/photo-1-mobile.jpg" width="280" height="280" srcset="img/card/photo-1-mobile@2x.jpg 2x" alt="Фотография заката в горах.">
+              </picture>
+              <div class="photo__block-container">
+                <div class="photo__text-wrapper">
+                  <h3 class="photo__title">Неродные просторы</h3>
+                  <p class="photo__text">Автор фото: Борис</p>
+                </div>
+                <div class="photo__button-wrapper">
+                  <button class="photo__button" type="button">1350
+                    <span class="visually-hidden">Нажми на кнопку, если понравилось фото.</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="photo__images-wrapper">
+              <div class="photo__block photo__block--small">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/card/photo-2-desktop.jpg 1x, img/card/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/card/photo-2-tablet.jpg 1x, img/card/photo-2-tablet@2x.jpg 2x">
+                  <img class="photo__image" src="img/card/photo-2-mobile.jpg" width="280" height="280" srcset="img/card/photo-2-mobile@2x.jpg 2x" alt="Фотография цветущего кактуса.">
+                </picture>
+                <div class="photo__block-container">
+                  <div class="photo__text-wrapper">
+                    <h3 class="photo__title">Местная растительность</h3>
+                    <p class="photo__text">Автор фото: Сергей</p>
+                  </div>
+                  <div class="photo__button-wrapper">
+                    <button class="photo__button" type="button">143
+                      <span class="visually-hidden">Нажми на кнопку, если понравилось фото.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="photo__block  photo__block--small photo__block--grey">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/card/photo-3-desktop.jpg 1x, img/card/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/card/photo-3-tablet.jpg 1x, img/card/photo-3-tablet@2x.jpg 2x">
+                  <img class="photo__image" src="img/card/photo-3-mobile.jpg" width="280" height="280" srcset="img/card/photo-3-mobile@2x.jpg 2x" alt="Фотография автодорог в горах.">
+                </picture>
+                <div class="photo__block-container">
+                  <div class="photo__text-wrapper">
+                    <h3 class="photo__title">Дорога на север</h3>
+                    <p class="photo__text">Автор фото: Петр</p>
+                  </div>
+                  <div class="photo__button-wrapper">
+                    <button class="photo__button" type="button">96
+                      <span class="visually-hidden">Нажми на кнопку, если понравилось фото.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="photo__block  photo__block--small">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/card/photo-4-desktop.jpg 1x, img/card/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/card/photo-4-tablet.jpg 1x, img/card/photo-4-tablet@2x.jpg 2x">
+                  <img class="photo__image" src="img/card/photo-4-mobile.jpg" width="280" height="280" srcset="img/card/photo-4-mobile@2x.jpg 2x" alt="Фотография моста в скалах.">
+                </picture>
+                <div class="photo__block-container">
+                  <div class="photo__text-wrapper">
+                    <h3 class="photo__title">Мост дьявола</h3>
+                    <p class="photo__text">Автор фото: Антон</p>
+                  </div>
+                  <div class="photo__button-wrapper">
+                    <button class="photo__button" type="button">254
+                      <span class="visually-hidden">Нажми на кнопку, если понравилось фото.</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="video">
+          <div class="video__wrapper">
+            <h2 class="visually-hidden">Видео</h2>
+            <p class="video__slogan">Все еще сомневаетесь?</p>
+            <p class="video__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <div class="video__film-wrapper">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img class="video__film" src="img/video-mobile.jpg" width="280" height="177" srcset="img/video-mobile@2x.jpg 2x" alt="Видеофайл о путешествии в Седону.">
+              </picture>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="main-footer">
+        <div class="main-footer__wrapper">
+          <a class="main-footer__link" href="#">#visitSEDONA</a>
+          <section class="main-footer__social social">
+            <h2 class="visually-hidden">Наша компания в соцсетях.</h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" target="_blank" href="https://vk.com/htmlacademy">
+                  <span class="visually-hidden">Мы в Вконтакте.</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--telegram" target="_blank" href="https://www.facebook.com/htmlacademy">
+                  <span class="visually-hidden">Мы в Telegram.</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" target="_blank" href="https://www.youtube.com/user/htmlacademyru">
+                  <span class="visually-hidden">Мы в Ютубе.</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <div class="main-footer__copyright copyright">
+            <a class="copyright__link" target="_blank" href="https://htmlacademy.ru/intensive/adaptive">
+              Разработано
+              <svg class="copyright__icon" aria-hidden="true" focusable="false" width="36" height="36" viewBox="0 0 36 36" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.1506 2.25H18.0502L4.5 3.58944V27.221L18.0502 34.875L31.5 27.221V3.58944L18.1506 2.25ZM29.5929 13.8266L18.0502 7.32075V7.22507H17.9498L17.8494 7.1294V7.22507L6.40706 13.8266V5.21591L17.9498 4.06782L29.5929 5.21591V13.8266ZM17.9498 8.75587L29.4926 15.1661L24.9758 17.6536L17.8494 13.6353V14.9747L23.7714 18.3233L22.868 18.8017L17.8494 15.9315V17.2709L21.6636 19.4714L20.8606 19.9498L17.8494 18.2276V19.5671L19.7565 20.6195L17.9498 21.6719L6.50743 15.2617L17.9498 8.75587ZM6.40706 16.6968L17.8494 23.2027V24.1595L9.92007 19.6628V21.0022L17.9498 25.5946V26.647L9.92007 22.1503V23.4897L17.9498 28.0821L26.0799 23.3941V18.419L29.4926 16.5055V26.0729L17.9498 32.6745L6.40706 26.1686V16.6968Z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
