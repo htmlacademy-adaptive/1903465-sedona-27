@@ -106,14 +106,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    // width: 648px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1200px;
     width: 100%;
-    // display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    // width: 1200px;
   }
+}
+
+.photo__image {
+  width: 100%;
 }

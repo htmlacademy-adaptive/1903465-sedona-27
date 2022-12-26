@@ -61,7 +61,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    // width: 768px;
   }
 }
 
@@ -104,7 +103,12 @@
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
+    max-width: 256px;
     padding: 52px 23px 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 400px;
   }
 
   &::before {
@@ -214,15 +218,6 @@
       padding: 52px 50px 41px;
     }
   }
-
-  @media (min-width: $tablet-width) {
-    // width: 256px;
-    // height: 256px;
-  }
-
-  @media (min-width: $desktop-width) {
-    // width: 400px;
-  }
 }
 
 .advantages__subject {
@@ -244,9 +239,10 @@
 
 .advantages__description {
   margin: 0;
+  color: $text-color-2;
 
-  @media (min-width: $tablet-width) {
-    // font-size: 21px;
+  &--light {
+    color: $start-color;
   }
 }
 
@@ -254,7 +250,6 @@
   display: block;
   width: 100%;
   max-width: 100%;
-  // height: auto;
 
   @media (min-width: $tablet-width) {
     flex-basis: calc(2 * 100% / 3);

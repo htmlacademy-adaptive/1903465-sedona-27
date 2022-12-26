@@ -58,4 +58,18 @@
     height: 54px;
     background-image: url("../img/icons/video-marker.svg");
   }
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 800px;
+    width: 100%;
+  }
+}
+
+.video__film {
+  width: 100%;
+  max-width: 100%;
 }
