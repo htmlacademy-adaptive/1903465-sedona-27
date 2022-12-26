@@ -16,3 +16,17 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.breaker {
+  // display: block;
+
+  &--mobile {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+}

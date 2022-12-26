@@ -1,19 +1,58 @@
 .page {
   min-height: 100%;
-  background-color: $background-color;
-  box-sizing: border-box;
+}
+
+.page img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.page a {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .page__body {
-  width: 320px;
+  // display: flex;
+  // flex-direction: column;
+  // max-width: 1280px;
+  // min-width: 320px;
   min-height: 100%;
+  // margin: 0 auto;
   margin: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  background-color: $background-color;
   color: $end-color;
+
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1280px;
+  }
+}
+
+.page__body-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  margin: 0 auto;
   background-color: $start-color;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+  }
 }
 
 .page__modal-container-mistake {

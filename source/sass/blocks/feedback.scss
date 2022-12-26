@@ -1,5 +1,29 @@
+.feedback__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  background-color: $start-color;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+  }
+}
+
 .feedback__header {
+  margin: 0 auto;
   padding: 38px 0 28px;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    padding: 64px 20px 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 115px 20px 42px;
+  }
 }
 
 .feedback__title {
@@ -8,7 +32,12 @@
   line-height: 26px;
   font-weight: 700;
   text-align: center;
-  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 20px 0;
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .feedback__description {
@@ -18,5 +47,8 @@
   font-weight: 400;
   color: $text-color-2;
   text-align: center;
-  text-transform: uppercase;
+}
+
+.feedback__form {
+  padding-bottom: 24px;
 }

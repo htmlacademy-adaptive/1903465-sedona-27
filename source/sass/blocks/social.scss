@@ -1,1 +1,49 @@
 //social
+.social__list {
+  @include list-reset;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 48px);
+  gap: 6px;
+  width: 156px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 258px;
+  }
+}
+
+.social__item {
+  display: flex;
+  justify-content: center;
+}
+
+.social__link {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  background-color: $background-color-3;
+  color: $start-color;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  &:hover,
+  &:focus {
+    background-color: $background-color-7;
+  }
+
+  &:active {
+    background-color: $background-color-8;
+    color: $text-color-6;
+  }
+
+  &--vkontakte {
+    background-image: url("../img/icons/social-vk.svg");
+  }
+
+  &--telegram {
+    background-image: url("../img/icons/social-telegram.svg");
+  }
+
+  &--youtube {
+    background-image: url("../img/icons/social-youtube.svg");
+  }
+}

@@ -1,5 +1,56 @@
-.photo {
-  padding-top: 38px;
+.photo__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    margin-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    // padding: 0 40px;
+  }
+}
+
+.photo__block {
+  width: 280px;
+  min-height: 375px;
+  padding: 24px 0 25px;
+  border-bottom: 1px solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    padding: 0;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+
+  &--small {
+    @media (min-width: $tablet-width) {
+      width: 324px;
+      min-height: 347px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 400px;
+      min-height: 267px;
+    }
+  }
+}
+
+.photo__block-container {
+  padding: 15px 0 25px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    padding: 22px 20px 15px;
+  }
 }
 
 .photo__title {
@@ -7,8 +58,6 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .photo__text {
@@ -16,5 +65,35 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  text-align: center;
+}
+
+.photo__button-wrapper {
+  display: flex;
+  width: 69px;
+  height: 26px;
+}
+
+.photo__button {
+  @include input-reset;
+  width: 23px;
+  height: 21px;
+  margin-right: 14px;
+  background-color: $start-color;
+  background-image: url("../img/icons/icon-like.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.photo__images-wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1200px;
+  }
 }

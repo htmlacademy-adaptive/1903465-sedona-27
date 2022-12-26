@@ -1,5 +1,28 @@
-.copyright__info {
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
+  padding: 11px 0 10px;
   text-align: center;
-  text-transform: uppercase;
+}
+
+.copyright__text {
+  color: $end-color;
+}
+
+.copyright__icon {
+  fill: $end-color;
+}
+
+.copyright__link:hover,
+.copyright__link:hover .copyright__icon {
+  color: $background-color-3;
+  fill: $background-color-3;
+}
+
+.copyright__link:active,
+.copyright__link:active .copyright__icon {
+  fill: $text-color-8;
+  color: $text-color-8;
 }

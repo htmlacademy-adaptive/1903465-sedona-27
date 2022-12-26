@@ -1,5 +1,15 @@
 .search {
-  padding: 38px 18px 49px;
+  // width: 100%;
+  width: 280px;
+  margin: 0 auto;
+  padding: 38px 0 49px;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    min-height: 318px;
+    // margin: 0 auto;
+    padding: 61px 10px 58px;
+  }
 }
 
 .search__tagline {
@@ -9,7 +19,11 @@
   line-height: 26px;
   font-weight: 700;
   text-align: center;
-  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .search__text {
@@ -19,5 +33,23 @@
   font-weight: 400;
   color: $text-color-2;
   text-align: center;
-  text-transform: uppercase;
+}
+
+.search__wrap {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
+
+.search__button {
+  width: 280px;
+  min-height: 58px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    min-height: 58px;
+  }
 }
