@@ -18,14 +18,22 @@
 }
 
 .breaker {
-  // display: block;
+  display: block;
 
   &--mobile {
     @media (max-width: $mobile-width-only) {
       display: none;
     }
+  }
 
-    &--desktop {
+  &--tablet {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    @media (min-width: $desktop-width) {
       display: none;
     }
   }
