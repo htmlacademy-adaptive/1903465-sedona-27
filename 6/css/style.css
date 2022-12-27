@@ -751,8 +751,13 @@ body {
 }
 @media (min-width: 768px) {
   .advantages__image {
-    flex-basis: 66.6666666667%;
-    width: 66.6666666667%;
+    max-width: 512px;
+    height: 256px;
+  }
+}
+@media (min-width: 1200px) {
+  .advantages__image {
+    max-width: 800px;
   }
 }
 
@@ -1311,9 +1316,20 @@ body {
   }
 }
 
-.video__film {
+.video__image {
   width: 100%;
   max-width: 100%;
+}
+@media (min-width: 768px) {
+  .video__image {
+    max-width: 648px;
+    height: 500px;
+  }
+}
+@media (min-width: 1200px) {
+  .video__image {
+    max-width: 800px;
+  }
 }
 
 .feedback__wrapper {
