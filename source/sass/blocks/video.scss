@@ -4,11 +4,13 @@
 
   @media (min-width: $tablet-width) {
     width: 648px;
-    margin-bottom: 40px;
+    padding: 58px 0 40px;
+    // margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
     width: 800px;
+    padding-top: 62px;
   }
 }
 
@@ -70,6 +72,7 @@
 }
 
 .video__image {
+  display: block;
   width: 100%;
   max-width: 100%;
 

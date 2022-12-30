@@ -148,17 +148,12 @@
                   </p>
                 </div>
               </fieldset>
-              <fieldset class="form__fieldset form__fieldset--decoration">
-                <legend class="form__title">
+              <div class="form__fieldset form__fieldset--textarea form__fieldset--decoration">
+                <label class="form__title" for="user-settings-form-about">
                   <span class="form__title-accent">Опишите свои эмоции:</span>
-                </legend>
-                <div class="form__textarea-item textarea">
-                  <label class="textarea__label">
-                    <span class="visually-hidden">Рассказ о впечатлениях.</span>
-                    <textarea class="textarea__text" name="user-settings-form-about" id="user-settings-form-about" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
-                  </label>
-                </div>
-              </fieldset>
+                </label>
+                <textarea class="form__textarea" name="user-settings-form-about" id="user-settings-form-about" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+              <div>
               <div class="form__button-wrapper">
                 <button class="form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
                 <p class="form__field">* — Обязательные поля</p>
@@ -200,20 +195,28 @@
           </div>
         </div>
       </footer>
-      <div class="page__modal-container-mistake mistake">
-        <div class="mistake__modal modal">
-          <h2 class="modal__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
-          <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-          <button class="modal___button button">OK</button>
-        </div>
-      </div>
-      <div class="page__modal-container-feedback feedback-modal">
-        <div class="feedback-modal__wrapper modal">
-          <h2 class="modal__title">Ваш отзыв отправлен!</h2>
-          <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-          <div class="modal__button-wrapper">
-            <button class="modal___button button">Закрыть окно</button>
-          </div>
+      <div class="modal">
+        <!--modal__container--is-valid  - для успешного сообщения-->
+        <!--modal__container--is-error  - в случае ошибки-->
+        <div class="modal__container modal__container--is-error">
+          <section class="modal__content modal__content--is-error">
+            <div class="modal__content-container">
+              <h2 class="modal__title title">Что-то пошло не&nbsp;так!</h2>
+              <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их&nbsp;заполнить</p>
+            </div>
+            <div class="modal__button-container">
+              <button class="modal__close-button" type="button">OK</button>
+            </div>
+          </section>
+          <section class="modal__content modal__content--is-valid">
+            <div class="modal__content-container">
+              <h2 class="modal__title title">Ваш отзыв отправлен!</h2>
+              <p class="modal__text">Спасибо за&nbsp;ваше участие, ваш отзыв уже поступил к&nbsp;нам. В&nbsp;ближайшее время мы опубликуем его на&nbsp;сайте.</p>
+            </div>
+            <div class="modal__button-container modal__button-container--is-valid">
+              <button class="modal__close-button" type="button">Закрыть окно</button>
+            </div>
+          </section>
         </div>
       </div>
     </div>
