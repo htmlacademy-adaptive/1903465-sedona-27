@@ -124,6 +124,64 @@ body {
   flex-grow: 1;
 }
 
+.title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .title {
+    font-size: 21px;
+  }
+}
+
+.text {
+  margin: 0;
+  color: #333333;
+}
+
+.button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  -webkit-appearance: none;
+          appearance: none;
+  outline: none;
+  box-shadow: none;
+  display: block;
+  width: 100%;
+  padding: 16px 20px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: #81b3d2;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+.button:focus {
+  outline: 0;
+}
+.button:hover {
+  background-color: #669ec0;
+}
+.button:active, .button:focus {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+.button:disabled {
+  background-color: #e5e5e5;
+  pointer-events: none;
+}
+
 .main-header {
   position: relative;
   min-height: 56px;
@@ -868,45 +926,6 @@ body {
     width: 458px;
     min-height: 58px;
   }
-}
-
-.button {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  text-decoration: none;
-  -webkit-appearance: none;
-          appearance: none;
-  outline: none;
-  box-shadow: none;
-  display: block;
-  width: 100%;
-  padding: 16px 20px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  background-color: #81b3d2;
-  color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
-}
-.button:focus {
-  outline: 0;
-}
-.button:hover {
-  background-color: #669ec0;
-}
-.button:active, .button:focus {
-  background-color: #5496bd;
-  color: rgba(255, 255, 255, 0.3);
-  outline: none;
-}
-.button:disabled {
-  background-color: #e5e5e5;
-  pointer-events: none;
 }
 
 .contacts__map {
@@ -1858,24 +1877,5 @@ body {
     width: 272px;
     font-size: 21px;
   }
-}
-
-.title {
-  margin: 0;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-}
-@media (min-width: 768px) {
-  .title {
-    font-size: 21px;
-  }
-}
-
-.text {
-  margin: 0;
-  color: #333333;
 }
 /*# sourceMappingURL=style.css.map */
