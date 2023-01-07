@@ -2,11 +2,12 @@
   min-height: 100%;
 }
 
-// .page img {
-//   max-width: 100%;
-//   height: auto;
-//   object-fit: contain;
-// }
+.page img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 
 .page a {
   text-decoration: none;
@@ -22,7 +23,16 @@
   font-weight: 400;
   background-color: $background-color;
   color: $end-color;
+
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1280px;
+  }
 }
 
 .page__body-wrapper {

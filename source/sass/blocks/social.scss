@@ -18,6 +18,8 @@
 
 .social__link {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 48px;
   height: 48px;
   background-color: $background-color-3;
@@ -33,10 +35,6 @@
   &:active {
     background-color: $background-color-8;
     color: $text-color-6;
-  }
-
-  &--vkontakte {
-    background-image: url("../img/icons/social-vk.svg");
   }
 
   &--telegram {

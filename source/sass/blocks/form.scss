@@ -7,7 +7,7 @@
 
 .form__fieldset {
   @include fieldset-reset;
-  padding: 24px 20px 0;
+  padding: 24px 0 0;
   border-top: 1px solid $border-color;
 
   @media (min-width: $tablet-width) {
@@ -16,6 +16,14 @@
 
   &--radio {
     margin-bottom: 23px;
+  }
+}
+
+.form__fieldset--textarea {
+  padding: 24px 0 0;
+
+  @media (min-width: $tablet-width) {
+    min-height: 160px;
   }
 }
 
@@ -30,7 +38,7 @@
       width: 100%;
       height: 1px;
       background-color: $background-color-6;
-      // z-index: -1;
+      z-index: 0;
     }
   }
 }
@@ -93,7 +101,7 @@
     position: relative;
     display: block;
     width: 402px;
-    margin: auto;
+    margin: 0 auto 28px;
     padding: 0 40px;
     background-color: $start-color;
   }
@@ -203,11 +211,27 @@
   }
 }
 
-.form__textarea-item {
-  margin: 0 auto 32px;
+.form__textarea {
+  display: block;
+  min-width: 279px;
+  min-height: 150px;
+  margin: 0 auto;
+  padding: 16px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $color-black-transparent;
+  background-color: $background-color;
+  border: none;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 48px;
+    width: 648px;
+    min-height: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 768px;
   }
 }
 

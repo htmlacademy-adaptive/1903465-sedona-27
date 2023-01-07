@@ -1,10 +1,17 @@
 .copyright__link {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  // align-items: center;
+  width: 128px;
+  height: 60px;
   margin: 0;
   padding: 11px 0 10px;
+  color: $end-color;
   text-align: center;
+}
+
+.copyright__link svg {
+  transform: translate(9px, -9px);
 }
 
 .copyright__text {
