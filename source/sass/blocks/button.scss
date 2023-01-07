@@ -1,7 +1,10 @@
+//button
 .button {
   @include input-reset;
   display: block;
+  width: 100%;
   padding: 16px 20px;
+
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
@@ -9,15 +12,20 @@
   background-color: $background-color-3;
   color: $start-color;
   text-align: center;
+  text-transform: uppercase;
+
+  border: none;
   cursor: pointer;
 
   &:hover {
     background-color: $background-color-7;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     background-color: $background-color-8;
     color: $text-color-6;
+    outline: none;
   }
 
   &:disabled {
