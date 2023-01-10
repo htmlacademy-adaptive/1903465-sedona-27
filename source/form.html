@@ -130,13 +130,13 @@
                   </p>
                   <p class="form__item">
                     <label class="form__label">
-                      <input class="form__toggle" type="checkbox" name="mount">
+                      <input class="form__toggle" type="checkbox" name="mount" checked>
                       <span class="form__toggle-text form__toggle-text--checkbox">Гора-Колокол</span>
                     </label>
                   </p>
                   <p class="form__item">
                     <label class="form__label">
-                      <input class="form__toggle" type="checkbox" name="park">
+                      <input class="form__toggle" type="checkbox" name="park" checked>
                       <span class="form__toggle-text form__toggle-text--checkbox">Слайд-парк</span>
                     </label>
                   </p>
@@ -164,7 +164,7 @@
       </main>
       <footer class="main-footer">
         <div class="main-footer__wrapper">
-          <a class="main-footer__link" href="#">#visitSEDONA</a>
+          <a class="main-footer__link" href="#" aria-label="Хэштег Седоны.">#visitSEDONA</a>
           <section class="main-footer__social social">
             <h2 class="visually-hidden">Наша компания в соцсетях.</h2>
             <ul class="social__list">
@@ -199,12 +199,12 @@
         </div>
       </footer>
       <div class="modal">
-        <!--modal__container--is-valid  - для успешного сообщения-->
-        <!--modal__container--is-error  - в случае ошибки-->
+        <!--modal__container--is-valid  - для успешного сообщения
+            modal__container--is-error  - в случае ошибки-->
         <div class="modal__container modal__container--is-error">
           <section class="modal__content modal__content--is-error">
             <div class="modal__content-container">
-              <h2 class="modal__title title">Что-то пошло не&nbsp;так!</h2>
+              <h2 class="modal__title heading">Что-то пошло не&nbsp;так!</h2>
               <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их&nbsp;заполнить</p>
             </div>
             <div class="modal__button-container">
@@ -213,7 +213,7 @@
           </section>
           <section class="modal__content modal__content--is-valid">
             <div class="modal__content-container">
-              <h2 class="modal__title title">Ваш отзыв отправлен!</h2>
+              <h2 class="modal__title heading">Ваш отзыв отправлен!</h2>
               <p class="modal__text text">Спасибо за&nbsp;ваше участие, ваш отзыв уже поступил к&nbsp;нам. В&nbsp;ближайшее время мы опубликуем его на&nbsp;сайте.</p>
             </div>
             <div class="modal__button-container modal__button-container--is-valid">
