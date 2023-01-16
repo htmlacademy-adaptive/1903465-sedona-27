@@ -133,7 +133,7 @@
   &--hotel::before {
     width: 40px;
     height: 40px;
-    background-image: url("../img/icons/advantages-hotel-mobile.svg");
+    background-image: url("../img/svg/advantages-hotel-mobile.svg");
 
     @media (min-width: $tablet-width) {
       left: 0;
@@ -151,7 +151,7 @@
   &--food::before {
     width: 40px;
     height: 40px;
-    background-image: url("../img/icons/advantages-burger-mobile.svg");
+    background-image: url("../img/svg/advantages-burger-mobile.svg");
 
     @media (min-width: $tablet-width) {
       left: 0;
@@ -170,7 +170,7 @@
   &--gift::before {
     width: 40px;
     height: 40px;
-    background-image: url("../img/icons/advantages-gift-mobile.svg");
+    background-image: url("../img/svg/advantages-gift-mobile.svg");
 
     @media (min-width: $tablet-width) {
       left: 0;

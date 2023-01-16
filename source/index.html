@@ -8,7 +8,7 @@
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <div class="page__body-wrapper">
@@ -57,6 +57,9 @@
                   <p class="advantages__description advantages__description--light">Седона&nbsp;&mdash; не&nbsp;аттракцион для <br class="breaker breaker--mobile breaker--desktop">туристов, <br class="breaker breaker--mobile breaker--tablet">там&nbsp;течёт своя жизнь</p>
                 </section>
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages-city-desktop.webp 1x, img/advantages-city-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/advantages-city-tablet.webp 1x, img/advantages-city-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/advantages-city.webp 1x, img/advantages-city@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/advantages-city-desktop.jpg 1x, img/advantages-city-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/advantages-city-tablet.jpg 1x, img/advantages-city-tablet@2x.jpg 2x">
                   <img class="advantages__image" src="img/advantages-city.jpg" srcset="img/advantages-city@2x.jpg 2x" width="320" height="260" alt="Улица городка Седона.">
@@ -90,6 +93,9 @@
                   <p class="advantages__description advantages__description--light">Да, по нему можно <br class="breaker breaker--mobile breaker--desktop">пройти! <br class="breaker breaker--mobile breaker--tablet">Если вы <br class="breaker breaker--mobile breaker--desktop">осмелитесь, конечно</p>
                 </section>
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages-bridge-desktop.webp 1x, img/advantages-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/advantages-bridge-tablet.webp 1x, img/advantages-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/advantages-bridge.webp 1x, img/advantages-bridge@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/advantages-bridge-desktop.jpg 1x, img/advantages-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/advantages-bridge-tablet.jpg 1x, img/advantages-bridge-tablet@2x.jpg 2x">
                   <img class="advantages__image" src="img/advantages-bridge.jpg" srcset="img/advantages-bridge@2x.jpg 2x" width="320" height="260" alt="Вид на каньон.">
@@ -133,25 +139,31 @@
       </main>
       <footer class="main-footer">
         <div class="main-footer__wrapper">
-          <a class="main-footer__link" href="#">#visitSEDONA</a>
+          <a class="main-footer__link" href="#" aria-label="Хэштег Седоны.">#visitSEDONA</a>
           <section class="main-footer__social social">
             <h2 class="visually-hidden">Наша компания в соцсетях.</h2>
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__link social__link--vkontakte" target="_blank" href="https://vk.com/htmlacademy">
                   <svg class="social__icon" width="24" height="24">
-                    <use href="img/sprite.svg#icon-vk"></use>
+                    <use href="img/sprite.svg#vk"></use>
                   </svg>
                   <span class="visually-hidden">Мы в Вконтакте.</span>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__link social__link--telegram" target="_blank" href="https://www.facebook.com/htmlacademy">
+                <a class="social__link social__link--telegram" target="_blank" href="https://t.me/htmlacademy">
+                  <svg class="social__icon" width="24" height="24">
+                    <use href="img/sprite.svg#telegram"></use>
+                  </svg>
                   <span class="visually-hidden">Мы в Telegram.</span>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link--youtube" target="_blank" href="https://www.youtube.com/user/htmlacademyru">
+                  <svg class="social__icon" width="24" height="24">
+                    <use href="img/sprite.svg#youtube"></use>
+                  </svg>
                   <span class="visually-hidden">Мы в Ютубе.</span>
                 </a>
               </li>
@@ -161,7 +173,7 @@
             <a class="copyright__link" target="_blank" href="https://htmlacademy.ru/intensive/adaptive">
               Разработано
               <svg class="copyright__icon" width="36" height="36">
-                <use href="img/sprite.svg#icon-copyright"></use>
+                <use href="img/sprite.svg#copyright"></use>
               </svg>
             </a>
           </div>
