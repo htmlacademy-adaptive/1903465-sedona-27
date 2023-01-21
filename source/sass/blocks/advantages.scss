@@ -42,6 +42,11 @@
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(-2px, 1px);
   }
 }
 
@@ -104,7 +109,7 @@
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     max-width: 256px;
-    padding: 52px 23px 31px;
+    padding: 52px 30px 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -144,7 +149,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 73px;
+      width: 78px;
     }
   }
 
@@ -156,14 +161,15 @@
     @media (min-width: $tablet-width) {
       left: 0;
       right: 0;
-      margin: 0 auto;
       width: 80px;
       height: 68px;
+      margin: 0 auto;
     }
 
     @media (min-width: $desktop-width) {
       width: 73px;
-      height: 69px;
+      height: 76px;
+      transform: translateX(-3px);
     }
   }
 
@@ -174,21 +180,33 @@
 
     @media (min-width: $tablet-width) {
       left: 0;
-      right: 0;
-      margin: 0 auto;
-      width: 67px;
+      right: 4px;
+      width: 81px;
       height: 75px;
+      margin: 0 auto;
+      transform: translate(5px, 3px);
     }
 
     @media (min-width: $desktop-width) {
       width: 78px;
       height: 75px;
+      background-image: url("../img/icons/gift-desktop.svg");
     }
   }
 
   &--sity {
     @media (max-width: $mobile-width-only) {
       padding-top: 73px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 53px 69px 31px;
+    }
+  }
+
+  &--bridge {
+    @media (min-width: $desktop-width) {
+      padding: 53px 69px 31px;
     }
   }
 
@@ -226,6 +244,12 @@
       padding: 52px 50px 41px;
     }
   }
+
+  &--center {
+    @media (min-width: $tablet-width) {
+      padding: 54px 30px 31px;
+    }
+  }
 }
 
 .advantages__subject {
@@ -243,6 +267,16 @@
     line-height: 21px;
     font-weight: 400;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 25px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 69px;
+  }
 }
 
 .advantages__description {
@@ -251,6 +285,10 @@
 
   &--light {
     color: $start-color;
+
+    // @media (min-width: $desktop-width) {
+    //   padding: 0 63px;
+    // }
   }
 }
 
@@ -260,8 +298,6 @@
   max-width: 100%;
 
   @media (min-width: $tablet-width) {
-    // flex-basis: calc(2 * 100% / 3);
-    // width: calc(2 * 100% / 3);
     max-width: 512px;
     height: 256px;
   }
