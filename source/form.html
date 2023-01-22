@@ -34,7 +34,7 @@
                 <a class="main-nav__link main-nav__link--current">Форма Отзыва</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" target="_blank" href="https://htmlacademy.ru/">HTML ACADEMY</a>
+                <a class="main-nav__link" target="_blank" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
               </li>
             </ul>
           </div>
@@ -49,12 +49,12 @@
           <div class="feedback__wrapper">
             <header class="feedback__header">
               <h2 class="feedback__title">Оставьте свой отзыв</h2>
-              <p class="feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о&nbsp;них, а&nbsp;также о&nbsp;посещенных вами достопримечательностях</p>
+              <p class="feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о&nbsp;них, а&nbsp;также о посещенных вами достопримечательностях</p>
             </header>
             <form class="feedback-form form" action="https://echo.htmlacademy.ru" method="post">
               <div class="form__column-wrapper">
-                <fieldset class="form__fieldset">
-                  <legend class="form__title">Представьтесь:</legend>
+                <fieldset class="form__fieldset form__fieldset--names">
+                  <legend class="form__title form__title--name">Представьтесь:</legend>
                   <ul class="form__list">
                     <li class="form__item">
                       <label class="form__label">
@@ -70,14 +70,14 @@
                     </li>
                     <li class="form__item">
                       <label class="form__label">
-                        <span class="form-name">Отчество:</span>
+                        <span class="form__label-name">Отчество:</span>
                         <input class="form__input" type="text" name="user-patronymic" placeholder="Викторович" value="Викторович" required>
                       </label>
                     </li>
                   </ul>
                 </fieldset>
-                <fieldset class="form__fieldset">
-                  <legend class="form__title">Контактная информация:</legend>
+                <fieldset class="form__fieldset form__fieldset--contacts">
+                  <legend class="form__title form__title--info">Контактная информация:</legend>
                   <ul class="form__list">
                     <li class="form__item">
                       <label class="form__label">
@@ -95,7 +95,7 @@
                 </fieldset>
               </div>
               <fieldset class="form__fieldset form__fieldset--radio form__fieldset--decoration">
-                <legend class="form__title">
+                <legend class="form__title form__title--impression">
                   <span class="form__title-accent">Ваше Общее впечатление:</span>
                 </legend>
                 <div class="form__list form__list--radio">
@@ -119,8 +119,8 @@
                   </p>
                 </div>
               </fieldset>
-              <fieldset class="form__fieldset form__fieldset--decoration">
-                <legend class="form__title">
+              <fieldset class="form__fieldset form__fieldset--sight form__fieldset--decoration">
+                <legend class="form__title form__title--sight">
                   <span class="form__title-accent">Посещенные<br>достопримечательности:</span>
                 </legend>
                 <div class="form__list form__list--checkbox">
@@ -151,10 +151,10 @@
                 </div>
               </fieldset>
               <div class="form__fieldset form__fieldset--textarea form__fieldset--decoration">
-                <label class="form__title" for="user-settings-form-about">
+                <label class="form__title form__title--textarea" for="user-settings-form-about">
                   <span class="form__title-accent">Опишите свои эмоции:</span>
                 </label>
-                <textarea class="form__textarea" name="user-settings-form-about" id="user-settings-form-about" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
+                <textarea class="form__textarea" name="user-settings-form-about" id="user-settings-form-about" rows="4" placeholder="Опишите подробно все свои восторги"></textarea>
               </div>
               <div class="form__button-wrapper">
                 <button class="form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
