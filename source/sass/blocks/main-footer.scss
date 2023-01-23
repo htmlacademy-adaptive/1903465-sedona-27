@@ -1,7 +1,6 @@
 .main-footer {
   width: 100%;
   margin: 0 auto;
-  // padding: 39px 57px 23px 57px;
   padding: 30px 57px 23px;
   text-align: center;
   color: $end-color;
@@ -10,6 +9,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 36px 32px 36px 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 118px 36px 118px;
   }
 }
 
@@ -44,6 +47,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 144px 156px 157px;
     gap: 27%;
   }
 }
@@ -79,6 +83,5 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    // justify-content: flex-start;
   }
 }
