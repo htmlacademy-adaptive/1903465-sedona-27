@@ -3,7 +3,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding: 26px 0 51px;
+    padding: 26px 0 46px;
 
     &::before {
       content: "";
@@ -22,7 +22,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 53px;
+    padding-bottom: 55px;
   }
 }
 
@@ -40,11 +40,11 @@
     padding-bottom: 7px;
 
     @media (min-width: $tablet-width) {
-      padding-bottom: 28px;
+      padding-bottom: 0;
     }
 
     @media (min-width: $desktop-width) {
-      padding-bottom: 58px;
+      padding-bottom: 28px;
     }
   }
 
@@ -83,22 +83,6 @@
   }
 }
 
-.form__fieldset--decoration {
-  position: relative;
-
-  &::before {
-    @media (min-width: $tablet-width) {
-      position: absolute;
-      content: "";
-      bottom: 86%;
-      width: 100%;
-      height: 1px;
-      background-color: $background-color-6;
-      z-index: 0;
-    }
-  }
-}
-
 .form__list {
   @include list-reset;
   padding: 0 20px;
@@ -115,6 +99,7 @@
       gap: 0 16px;
       max-width: 578px;
       margin: 0 auto;
+      padding: 30px 0 31px;
     }
 
     @media (min-width: $desktop-width) {
@@ -123,7 +108,7 @@
       max-width: 960px;
       min-height: 80px;
       gap: 0 28px;
-      padding: 0 40px;
+      padding: 28px 40px 31px;
     }
   }
 
@@ -134,13 +119,14 @@
       gap: 0 32px;
       max-width: 480px;
       margin: 0 auto;
+      padding: 28px 0 0;
     }
 
     @media (min-width: $desktop-width) {
       display: flex;
       justify-content: space-between;
       max-width: 960px;
-      padding: 31px 32px 31px 44px;
+      padding: 61px 32px 31px 44px;
     }
   }
 }
@@ -219,6 +205,21 @@
       margin-bottom: 0;
     }
   }
+
+  &--decoration {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $background-color-6;
+      z-index: 0;
+    }
+  }
 }
 
 .form__title-accent {
@@ -226,7 +227,7 @@
     position: relative;
     display: block;
     width: 402px;
-    margin: 0 auto 28px;
+    margin: 0 auto;
     padding: 0 40px;
     background-color: $start-color;
   }
@@ -386,10 +387,12 @@
   @media (min-width: $tablet-width) {
     width: 648px;
     min-height: 160px;
+    margin-top: 56px;
   }
 
   @media (min-width: $desktop-width) {
     width: 768px;
+    margin-top: 54px;
   }
 }
 
@@ -408,6 +411,7 @@
 
   @media (min-width: $desktop-width) {
     width: 768px;
+    margin-bottom: 38px;
   }
 }
 
