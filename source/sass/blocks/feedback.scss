@@ -1,5 +1,5 @@
 .feedback__wrapper {
-  width: 280px;
+  // width: 280px;
   margin: 0 auto;
   background-color: $start-color;
 
@@ -34,7 +34,6 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 20px 0;
     font-size: 30px;
     line-height: 26px;
   }

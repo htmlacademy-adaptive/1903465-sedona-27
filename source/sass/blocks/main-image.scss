@@ -16,6 +16,7 @@
 
   @media (min-width: $tablet-width) {
     height: 518px;
+    padding-top: 77px;
     background-image: url("../img/background-index-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -58,7 +59,6 @@
 
   @media (min-width: $tablet-width) {
     width: 457px;
-    // height: 350px;
   }
 
   @media (min-width: $desktop-width) {

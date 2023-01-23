@@ -9,7 +9,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 10px;
+  top: 9px;
   right: 10px;
   width: 44px;
   height: 36px;
@@ -129,7 +129,7 @@
 
 .main-nav__item {
   @media (min-width: $tablet-width) {
-    width: 153px;
+    width: 154px;
   }
 
   @media (min-width: $desktop-width) {
@@ -161,7 +161,7 @@
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   @media (min-width: $tablet-width) {
-    padding: 19px 10px 15px 34px;
+    padding: 19px 10px 15px 12px;
     font-size: 14px;
     line-height: 21px;
     background-color: transparent;

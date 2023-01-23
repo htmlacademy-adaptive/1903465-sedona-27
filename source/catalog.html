@@ -9,6 +9,8 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <div class="page__body-wrapper">
@@ -32,7 +34,7 @@
                 <a class="main-nav__link" href="form.html">Форма Отзыва</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" target="_blank" href="https://htmlacademy.ru/">HTML ACADEMY</a>
+                <a class="main-nav__link" target="_blank" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
               </li>
             </ul>
           </div>
@@ -52,14 +54,16 @@
           <div class="photo__wrapper">
             <h2 class="visually-hidden">Фото</h2>
             <div class="photo__block">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/card/photo-1-desktop.webp 1x, img/card/photo-1-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/card/photo-1-tablet.webp 1x, img/card/photo-1-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/card/photo-1-mobile.webp 1x, img/card/photo-1-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/card/photo-1-desktop.jpg 1x, img/card/photo-1-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/card/photo-1-tablet.jpg 1x, img/card/photo-1-tablet@2x.jpg 2x">
-                <img class="photo__image" src="img/card/photo-1-mobile.jpg" width="280" height="280" srcset="img/card/photo-1-mobile@2x.jpg 2x" alt="Фотография заката в горах.">
-              </picture>
+              <div class="photo__image-container">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/card/photo-1-desktop.webp 1x, img/card/photo-1-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/card/photo-1-tablet.webp 1x, img/card/photo-1-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/card/photo-1-mobile.webp 1x, img/card/photo-1-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/card/photo-1-desktop.jpg 1x, img/card/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/card/photo-1-tablet.jpg 1x, img/card/photo-1-tablet@2x.jpg 2x">
+                  <img class="photo__image" src="img/card/photo-1-mobile.jpg" width="280" height="280" srcset="img/card/photo-1-mobile@2x.jpg 2x" alt="Фотография заката в горах.">
+                </picture>
+              </div>
               <div class="photo__block-container">
                 <div class="photo__text-wrapper">
                   <h3 class="photo__title">Неродные просторы</h3>
@@ -70,22 +74,24 @@
                     <svg width="23" height="21" viewBox="0 0 23 21">
                       <use href="img/sprite.svg#like"></use>
                     </svg>
-                    1350
                     <span class="visually-hidden">Нажми на кнопку, если понравилось фото.</span>
                   </button>
+                  <p class="photo__number">1350</p>
                 </div>
               </div>
             </div>
             <div class="photo__images-wrapper">
               <div class="photo__block photo__block--small">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/card/photo-2-desktop.webp 1x, img/card/photo-2-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/card/photo-2-tablet.webp 1x, img/card/photo-2-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/card/photo-2-mobile.webp 1x, img/card/photo-2-mobile@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/card/photo-2-desktop.jpg 1x, img/card/photo-2-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/card/photo-2-tablet.jpg 1x, img/card/photo-2-tablet@2x.jpg 2x">
-                  <img class="photo__image" src="img/card/photo-2-mobile.jpg" width="280" height="280" srcset="img/card/photo-2-mobile@2x.jpg 2x" alt="Фотография цветущего кактуса.">
-                </picture>
+                <div class="photo__image-container">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/card/photo-2-desktop.webp 1x, img/card/photo-2-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/card/photo-2-tablet.webp 1x, img/card/photo-2-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/card/photo-2-mobile.webp 1x, img/card/photo-2-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/card/photo-2-desktop.jpg 1x, img/card/photo-2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/card/photo-2-tablet.jpg 1x, img/card/photo-2-tablet@2x.jpg 2x">
+                    <img class="photo__image" src="img/card/photo-2-mobile.jpg" width="280" height="280" srcset="img/card/photo-2-mobile@2x.jpg 2x" alt="Фотография цветущего кактуса.">
+                  </picture>
+                </div>
                 <div class="photo__block-container">
                   <div class="photo__text-wrapper">
                     <h3 class="photo__title">Местная растительность</h3>
@@ -96,21 +102,23 @@
                       <svg width="23" height="21" viewBox="0 0 23 21">
                         <use href="img/sprite.svg#like"></use>
                       </svg>
-                      143
                       <span class="visually-hidden">Нажми на кнопку, если понравилось фото.</span>
                     </button>
+                    <p class="photo__number">143</p>
                   </div>
                 </div>
               </div>
               <div class="photo__block  photo__block--small photo__block--grey">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/card/photo-3-desktop.webp 1x, img/card/photo-3-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/card/photo-3-tablet.webp 1x, img/card/photo-3-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/card/photo-3-mobile.webp 1x, img/card/photo-3-mobile@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/card/photo-3-desktop.jpg 1x, img/card/photo-3-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/card/photo-3-tablet.jpg 1x, img/card/photo-3-tablet@2x.jpg 2x">
-                  <img class="photo__image" src="img/card/photo-3-mobile.jpg" width="280" height="280" srcset="img/card/photo-3-mobile@2x.jpg 2x" alt="Фотография автодорог в горах.">
-                </picture>
+                <div class="photo__image-container">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/card/photo-3-desktop.webp 1x, img/card/photo-3-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/card/photo-3-tablet.webp 1x, img/card/photo-3-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/card/photo-3-mobile.webp 1x, img/card/photo-3-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/card/photo-3-desktop.jpg 1x, img/card/photo-3-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/card/photo-3-tablet.jpg 1x, img/card/photo-3-tablet@2x.jpg 2x">
+                    <img class="photo__image" src="img/card/photo-3-mobile.jpg" width="280" height="280" srcset="img/card/photo-3-mobile@2x.jpg 2x" alt="Фотография автодорог в горах.">
+                  </picture>
+                </div>
                 <div class="photo__block-container">
                   <div class="photo__text-wrapper">
                     <h3 class="photo__title">Дорога на север</h3>
@@ -121,21 +129,23 @@
                       <svg width="23" height="21" viewBox="0 0 23 21">
                         <use href="img/sprite.svg#like"></use>
                       </svg>
-                      96
                       <span class="visually-hidden">Нажми на кнопку, если понравилось фото.</span>
                     </button>
+                    <p class="photo__number">96</p>
                   </div>
                 </div>
               </div>
               <div class="photo__block  photo__block--small">
-                <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/card/photo-4-desktop.webp 1x, img/card/photo-4-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/card/photo-4-tablet.webp 1x, img/card/photo-4-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="img/card/photo-4-mobile.webp 1x, img/card/photo-4-mobile@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="img/card/photo-4-desktop.jpg 1x, img/card/photo-4-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/card/photo-4-tablet.jpg 1x, img/card/photo-4-tablet@2x.jpg 2x">
-                  <img class="photo__image" src="img/card/photo-4-mobile.jpg" width="280" height="280" srcset="img/card/photo-4-mobile@2x.jpg 2x" alt="Фотография моста в скалах.">
-                </picture>
+                <div class="photo__image-container">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/card/photo-4-desktop.webp 1x, img/card/photo-4-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/card/photo-4-tablet.webp 1x, img/card/photo-4-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/card/photo-4-mobile.webp 1x, img/card/photo-4-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/card/photo-4-desktop.jpg 1x, img/card/photo-4-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/card/photo-4-tablet.jpg 1x, img/card/photo-4-tablet@2x.jpg 2x">
+                    <img class="photo__image" src="img/card/photo-4-mobile.jpg" width="280" height="280" srcset="img/card/photo-4-mobile@2x.jpg 2x" alt="Фотография моста в скалах.">
+                  </picture>
+                </div>
                 <div class="photo__block-container">
                   <div class="photo__text-wrapper">
                     <h3 class="photo__title">Мост дьявола</h3>
@@ -146,9 +156,9 @@
                       <svg width="23" height="21" viewBox="0 0 23 21">
                         <use href="img/sprite.svg#like"></use>
                       </svg>
-                      254
                       <span class="visually-hidden">Нажми на кнопку, если понравилось фото.</span>
                     </button>
+                    <p class="photo__number">254</p>
                   </div>
                 </div>
               </div>
@@ -173,7 +183,7 @@
           </div>
         </section>
       </main>
-      <footer class="main-footer">
+      <footer class="main-footer main-footer--inner">
         <div class="main-footer__wrapper">
           <a class="main-footer__link" href="#" aria-label="Хэштег Седоны.">#visitSEDONA</a>
           <section class="main-footer__social social">
@@ -206,7 +216,7 @@
             </ul>
           </section>
           <div class="main-footer__copyright copyright">
-            <a class="copyright__link" target="_blank" href="https://htmlacademy.ru/intensive/adaptive">
+            <a class="copyright__link" target="_blank" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
               Разработано
               <svg class="copyright__icon" width="36" height="36">
                 <use href="img/sprite.svg#copyright"></use>

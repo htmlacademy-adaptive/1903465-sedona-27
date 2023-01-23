@@ -6,7 +6,11 @@
   @media (min-width: $tablet-width) {
     width: 500px;
     min-height: 318px;
-    padding: 61px 10px 58px;
+    padding: 63px 10px 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 67px;
   }
 }
 
@@ -19,8 +23,13 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
     font-size: 30px;
     line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 31px;
   }
 }
 
@@ -31,6 +40,14 @@
   font-weight: 400;
   color: $text-color-2;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .search__wrap {

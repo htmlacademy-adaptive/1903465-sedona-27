@@ -1,17 +1,17 @@
 .copyright__link {
   display: flex;
-  justify-content: center;
-  // align-items: center;
-  // width: 128px;
+  justify-content: space-between;
+  align-items: center;
+  width: 131px;
   height: 60px;
   margin: 0;
-  padding: 11px 0 10px;
+  // padding: 11px 0 10px;
   color: $end-color;
   text-align: center;
 }
 
 .copyright__link svg {
-  transform: translate(9px, -9px);
+  // transform: translate(6px, -9px);
 }
 
 .copyright__text {
