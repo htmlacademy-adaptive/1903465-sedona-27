@@ -44,14 +44,14 @@
   width: 23px;
   height: 4px;
   background-color: $background-color-3;
-  box-shadow: 0 9px 0 0 $background-color-3, 0 18px 0 0 $background-color-3;
+  box-shadow: 0 10px 0 0 $background-color-3, 0 20px 0 0 $background-color-3;
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
   background-color: fade($background-color-3, 30%);
   box-shadow:
-    0 8px 0 0 fade($background-color-3, 30%),
-    0 16px 0 0 fade($background-color-3, 30%);
+    0 10px 0 0 fade($background-color-3, 30%),
+    0 20px 0 0 fade($background-color-3, 30%);
 }
 
 @media (max-width: $mobile-width-only) {
@@ -128,8 +128,16 @@
 }
 
 .main-nav__item {
+  background-color: $background-color-3;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  box-shadow: 0 1px rgba(255, 255, 255, 0.2);
+
   @media (min-width: $tablet-width) {
     width: 154px;
+    background-color: $start-color;
+    border: none;
+    box-shadow: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -140,7 +148,6 @@
 .main-nav__item:nth-child(3n+3) {
   @media (min-width: $tablet-width) {
     margin-left: auto;
-    // padding-left: 22px;
   }
 
   @media (min-width: $desktop-width) {
@@ -158,7 +165,7 @@
   color: $start-color;
   text-align: center;
   text-transform: uppercase;
-  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  // box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   @media (min-width: $tablet-width) {
     padding: 19px 10px 15px 12px;
