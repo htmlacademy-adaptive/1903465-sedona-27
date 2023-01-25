@@ -230,7 +230,7 @@
 
   &--number {
     margin: 0;
-    padding: 25px 31px 26px;
+    padding: 0;
     background-color: $background-color-4;
     color: $end-color;
 
@@ -251,6 +251,19 @@
 
     @media (min-width: $desktop-width) {
       padding: 64px 36px 41px;
+    }
+  }
+}
+
+.advantages__content-wrapper {
+  @media (max-width: $mobile-width-only) {
+    width: 280px;
+    margin: 0 auto;
+    padding: 25px 17px;
+    border-bottom: 1px solid $border-color-2;
+
+    &--accent {
+      border: none;
     }
   }
 }

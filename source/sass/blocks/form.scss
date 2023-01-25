@@ -69,6 +69,14 @@
       margin-bottom: 0;
     }
   }
+
+  &--sight {
+    padding-bottom: 8px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 0;
+    }
+  }
 }
 
 .form__fieldset--textarea {
@@ -207,24 +215,27 @@
   }
 
   &--decoration {
-    position: relative;
+    @media (min-width: $tablet-width) {
+      position: relative;
 
-    &::before {
-      position: absolute;
-      content: "";
-      top: 50%;
-      left: 0;
-      width: 100%;
-      height: 1px;
-      background-color: $background-color-6;
-      z-index: 0;
+      &::before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $background-color-6;
+        z-index: 0;
+      }
     }
   }
 }
 
 .form__title-accent {
+  position: relative;
+
   @media (min-width: $tablet-width) {
-    position: relative;
     display: block;
     width: 402px;
     margin: 0 auto;
@@ -342,6 +353,10 @@
   background-color: $background-color;
   color: $end-color;
 
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
   &--phone {
     padding-right: 58px;
     background-image: url("../img/svg/phone.svg");
@@ -365,8 +380,7 @@
   &:focus {
     color: $end-color;
     background-color: $start-color;
-    border: 4px solid $border-color;
-    box-shadow: inset 0 0 0 4px $border-color;
+    outline: 4px solid $border-color;
   }
 }
 
@@ -383,6 +397,10 @@
   color: $color-black-transparent;
   background-color: $background-color;
   border: none;
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     width: 648px;
