@@ -28,10 +28,3 @@ for (let modalCloseBtn of modalCloseBtns) {
   modal.classList.remove('modal__is-open');
   });
 }
-
-document.addEventListener('keydown', (evt) => {
-  if (evt.key === 'Escape') {
-    evt.preventDefault();
-    modal.classList.remove('modal__is-open');
-  }
-});

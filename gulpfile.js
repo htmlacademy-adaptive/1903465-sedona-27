@@ -133,11 +133,6 @@ const watcher = () => {
   gulp.watch('source/*.html', gulp.series(html, reload));
 }
 
-// const watcher = () => {
-//   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-//   gulp.watch('source/*.html').on('change', browser.reload);
-// }
-
 // Build
 
 export const build = gulp.series(
@@ -152,8 +147,6 @@ export const build = gulp.series(
   createWebp
   ),
   );
-
-  // exports.build = build;
 
 // Default
 
